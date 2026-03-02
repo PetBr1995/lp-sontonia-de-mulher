@@ -7,7 +7,6 @@ function App() {
     <>
       <section>
         <Home />
-        <SecondSection />
       </section>
     </>
   );

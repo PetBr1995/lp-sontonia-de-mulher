@@ -1,4 +1,4 @@
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, ChevronDown } from "lucide-react";
 
 const SecondSection = () => {
   const info = [
@@ -13,7 +13,29 @@ const SecondSection = () => {
   ];
 
   return (
-    <section className="bg-[#D2C9C3] px-4 py-10 sm:px-6 lg:px-8">
+    <section
+      className="
+        relative 
+        bg-[#D2C9C3] 
+        px-4 py-10 sm:px-6 lg:px-8
+
+        after:content-['']
+        after:absolute
+        after:w-13
+        after:h-13
+        after:bg-[#D2C9C3]
+        after:-bottom-4
+        after:left-1/2
+        after:-translate-x-1/2
+        after:rotate-45
+        after:rounded-2xl
+      "
+    >
+      {/* SETA CENTRALIZADA DENTRO DO LOSANGO */}
+      <span className="absolute -bottom-7 left-1/2 z-10 flex h-14 w-14 -translate-x-1/2 items-center justify-center">
+        <ChevronDown className="h-6 w-6 text-[#5B1F24]" />
+      </span>
+
       {/* CARD PRINCIPAL */}
       <div className="mx-auto grid max-w-7xl overflow-hidden rounded-2xl bg-[#D0CEC5] shadow-[0_0_2px_rgba(0,0,0,0.4)] md:grid-cols-2">
         {/* IMAGEM */}
@@ -61,15 +83,15 @@ const SecondSection = () => {
         </div>
       </div>
 
-      {/* LISTA "VOCÊ VAI SAIR COM" */}
+      {/* LISTA */}
       <div className="mx-auto mt-10 grid max-w-7xl gap-6 px-1 md:grid-cols-[1fr_2fr] md:items-start md:gap-10">
-        <div className="flex items-center justify-center h-full text-[#5B1F24] md:justify-center">
+        <div className="flex h-full items-center justify-center text-[#5B1F24]">
           <h2 className="text-3xl font-medium leading-tight sm:text-4xl lg:text-5xl">
             Você vai sair com:
           </h2>
         </div>
 
-        <div className="flex flex-col">
+        <div className="flex flex-col pb-10">
           {info.map((inf, idx) => (
             <div
               key={`${inf.content}-${idx}`}
@@ -79,7 +101,7 @@ const SecondSection = () => {
                 <ArrowRight className="h-5 w-5 text-[#9E2F3F]" />
               </div>
 
-              <p className="text-[#5B1F24] text-base leading-relaxed sm:text-lg lg:text-xl">
+              <p className="text-base leading-relaxed text-[#5B1F24] sm:text-lg lg:text-xl">
                 {inf.content}
               </p>
             </div>
