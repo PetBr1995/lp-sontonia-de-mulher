@@ -1,4 +1,5 @@
 import FifteenthSection from "../components/FifteenthSection";
+import FormSection from "../components/FormSection";
 import FourthSection from "../components/FourthSection";
 import HeroSection from "../components/HeroSection";
 import SecondSection from "../components/SecondSection";
@@ -15,6 +16,7 @@ const Home = () => {
         <FourthSection/>
         <FifteenthSection/>
         <SixteenthSection/>
+        <FormSection/>
       </section>
     </>
   );
