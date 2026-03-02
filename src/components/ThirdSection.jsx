@@ -13,13 +13,14 @@ const ThirdSection = () => {
       desc: "Identidade, prioridades e decisões conscientes.",
     },
     {
+      titulo: "Financeiro",
+      desc: "Visão de negócio, execução inteligente e geração de valor.",
+    },
+    {
       titulo: "Saúde",
       desc: "Energia, disciplina e consistência para manter o ritmo.",
     },
-    {
-      titulo: "Empreendedorismo",
-      desc: "Visão de negócio, execução inteligente e geração de valor.",
-    },
+    
   ];
 
   return (

@@ -1,6 +1,6 @@
 const FourthSection = () => {
     return (
-      <section className="bg-[#EDE4DF] py-16 px-4 sm:px-6 lg:px-8">
+      <section className="bg-[url(/BG4.png)] bg-no-repeat bg-cover bg-center py-16 px-4 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-6xl">
           {/* BLOCO 1 */}
           <div className="grid items-center gap-10 lg:grid-cols-2">
