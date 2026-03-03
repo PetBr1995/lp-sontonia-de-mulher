@@ -1,3 +1,5 @@
+import Reveal from "./Reveal";
+
 const ThirdSection = () => {
   const cardInfo = [
     {
@@ -26,12 +28,14 @@ const ThirdSection = () => {
   return (
     <section className="bg-[url(/imagem-fundo-terceira-dobra.png)] bg-cover bg-center bg-no-repeat py-12 sm:py-16">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <h1 className="mx-auto max-w-4xl text-center text-2xl leading-tight text-[#F3EAEA] sm:text-3xl sm:leading-tight lg:text-4xl">
-          <span className="uppercase">O Método 5P</span> organiza sua vida em
-          cinco pilares fundamentais
-        </h1>
+        <Reveal once>
+          <h1 className="mx-auto max-w-4xl text-center text-2xl leading-tight text-[#F3EAEA] sm:text-3xl sm:leading-tight lg:text-4xl">
+            <span className="uppercase">O Método 5P</span> organiza sua vida em
+            cinco pilares fundamentais
+          </h1>
+        </Reveal>
 
-        <div className="mt-8 flex flex-wrap justify-center gap-4 sm:mt-10 sm:gap-5">
+        <Reveal delay={80} className="mt-8 flex flex-wrap justify-center gap-4 sm:mt-10 sm:gap-5">
           {cardInfo.map((info, idx) => (
             <div
               key={`${info.titulo}-${idx}`}
@@ -55,10 +59,10 @@ const ThirdSection = () => {
               </p>
             </div>
           ))}
-        </div>
+        </Reveal>
 
         {/* BOTÃO */}
-        <div className="mt-10 flex items-center justify-center sm:mt-12">
+        <Reveal delay={120} className="mt-10 flex items-center justify-center sm:mt-12">
           <div className="w-fit rounded-[18px] bg-[#D85A66] p-[1px] shadow-[0_0_10px_rgba(0,0,0,0.25)]">
             <div className="rounded-[18px] bg-gradient-to-r from-[#D85A66] via-[#9E2F3F] to-[#9E2F3F] px-8 py-3 sm:px-10">
               <a
@@ -69,7 +73,7 @@ const ThirdSection = () => {
               </a>
             </div>
           </div>
-        </div>
+        </Reveal>
       </div>
     </section>
   );

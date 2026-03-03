@@ -1,4 +1,5 @@
 import { useEffect, useMemo, useState } from "react";
+import Reveal from "./Reveal";
 
 function onlyDigits(v = "") {
   return v.replace(/\D/g, "");
@@ -163,7 +164,7 @@ const FormSection = () => {
   return (
     <section className="relative bg-[#E6E1DA] py-20 px-4">
       <div className="mx-auto max-w-5xl">
-        <div className="text-center">
+        <Reveal once className="text-center">
           <h2 className="text-3xl sm:text-4xl text-[#7A2E33] font-light">
             Garanta sua vaga no{" "}
             <span className="font-semibold uppercase">Sintonia de Mulher</span>
@@ -174,9 +175,13 @@ const FormSection = () => {
           </p>
 
           <div className="mx-auto mt-6 h-[2px] w-20 bg-[#7A2E33]" />
-        </div>
+        </Reveal>
 
-        <form onSubmit={handleSubmit} className="mt-14 grid grid-cols-1 gap-8 sm:grid-cols-2">
+        <Reveal
+          delay={80}
+          className="mt-14"
+        >
+        <form onSubmit={handleSubmit} className="grid grid-cols-1 gap-8 sm:grid-cols-2">
           <input
             type="text"
             placeholder="Nome*"
@@ -231,6 +236,7 @@ const FormSection = () => {
             {message && <p className="mt-4 text-sm text-[#7A2E33]">{message}</p>}
           </div>
         </form>
+        </Reveal>
       </div>
     </section>
   );

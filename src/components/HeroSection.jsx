@@ -1,4 +1,5 @@
 import { Calendar, MapPin } from "lucide-react";
+import Reveal from "./Reveal";
 
 const HeroSection = () => {
   return (
@@ -7,7 +8,7 @@ const HeroSection = () => {
 
       <div className="relative max-w-7xl mx-auto flex flex-col  justify-center items-center px-5 sm:px-6">
         {/* TÍTULO */}
-        <div className="text-white text-center">
+        <Reveal once className="text-white text-center">
           <h1 className="text-6xl sm:text-7xl lg:text-8xl leading-[1.05]">
             Sintonia
             <br />
@@ -18,19 +19,22 @@ const HeroSection = () => {
               Mulher
             </span>
           </h1>
-        </div>
+        </Reveal>
 
         {/* SUBTÍTULO */}
-        <div className="mt-6 sm:mt-8 max-w-3xl">
+        <Reveal delay={80} className="mt-6 sm:mt-8 max-w-3xl">
           <p className="text-white text-xl sm:text-2xl lg:text-3xl text-center font-light leading-relaxed">
             Um dia para organizar os{" "}
             <span className="font-medium">5 pilares da sua vida</span> com
             método, clareza e direção
           </p>
-        </div>
+        </Reveal>
 
         {/* DATA E LOCAL */}
-        <div className="mt-8 sm:mt-10 flex flex-col sm:flex-row gap-4 sm:gap-6 uppercase text-white">
+        <Reveal
+          delay={120}
+          className="mt-8 sm:mt-10 flex flex-col sm:flex-row gap-4 sm:gap-6 uppercase text-white"
+        >
           <div className="flex gap-2 items-center justify-center text-lg sm:text-xl lg:text-2xl">
             <Calendar className="w-6 h-6 lg:w-7 lg:h-7" />
             <p>28 de maio de 2026</p>
@@ -42,10 +46,10 @@ const HeroSection = () => {
             <MapPin className="w-6 h-6 lg:w-7 lg:h-7" />
             <p>Em Manaus</p>
           </div>
-        </div>
+        </Reveal>
 
         {/* BOTÃO */}
-        <div className="mt-8 sm:mt-12">
+        <Reveal delay={160} className="mt-8 sm:mt-12">
           <div className="bg-[#D85A66] w-fit px-[1px] py-[1px] rounded-[18px]">
             <div className="bg-gradient-to-r from-[#D85A66] via-[#9E2F3F] to-[#9E2F3F] px-8 sm:px-10 py-3 rounded-[18px]">
               <a
@@ -56,7 +60,7 @@ const HeroSection = () => {
               </a>
             </div>
           </div>
-        </div>
+        </Reveal>
       </div>
     </section>
   );

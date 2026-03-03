@@ -1,4 +1,5 @@
 import { ArrowRight, ChevronDown } from "lucide-react";
+import Reveal from "./Reveal";
 
 const SecondSection = () => {
   const info = [
@@ -37,7 +38,7 @@ const SecondSection = () => {
       </span>
 
       {/* CARD PRINCIPAL */}
-      <div className="mx-auto grid max-w-7xl overflow-hidden rounded-2xl bg-[#D0CEC5] shadow-[0_0_2px_rgba(0,0,0,0.4)] md:grid-cols-2">
+      <Reveal className="mx-auto grid max-w-7xl overflow-hidden rounded-2xl bg-[#D0CEC5] shadow-[0_0_2px_rgba(0,0,0,0.4)] md:grid-cols-2">
         {/* IMAGEM */}
         <div className="flex items-center justify-center p-4 sm:p-6">
           <div className="w-full">
@@ -81,10 +82,13 @@ const SecondSection = () => {
             </div>
           </div>
         </div>
-      </div>
+      </Reveal>
 
       {/* LISTA */}
-      <div className="mx-auto mt-10 grid max-w-7xl gap-6 px-1 md:grid-cols-[1fr_2fr] md:items-start md:gap-10">
+      <Reveal
+        delay={80}
+        className="mx-auto mt-10 grid max-w-7xl gap-6 px-1 md:grid-cols-[1fr_2fr] md:items-start md:gap-10"
+      >
         <div className="flex h-full items-center justify-center text-[#5B1F24]">
           <h2 className="text-3xl font-medium leading-tight sm:text-4xl lg:text-5xl">
             Você vai sair com:
@@ -107,7 +111,7 @@ const SecondSection = () => {
             </div>
           ))}
         </div>
-      </div>
+      </Reveal>
     </section>
   );
 };

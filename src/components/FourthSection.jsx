@@ -1,3 +1,5 @@
+import Reveal from "./Reveal";
+
 const FourthSection = () => {
     return (
         <section className="bg-[url(/BG4.png)] bg-no-repeat bg-cover bg-center py-16 px-4 sm:px-6 lg:px-8">
@@ -5,7 +7,7 @@ const FourthSection = () => {
                 {/* BLOCO 1 */}
                 <div className="grid items-center gap-10 lg:grid-cols-2">
                     {/* TEXTO (esquerda) */}
-                    <div className="max-w-xl text-center lg:text-left mx-auto lg:mx-0">
+                    <Reveal className="max-w-xl text-center lg:text-left mx-auto lg:mx-0">
                         <p className="text-[#7A2E33]/80 text-sm sm:text-base">
                             Idealizadora
                         </p>
@@ -22,10 +24,10 @@ const FourthSection = () => {
                                 Anos depois ela passou a atuar no segmento de eventos atuando como Diretora Executiva de umas das principais empresas do ramo de shows e entretenimento da região norte – Fábrica de Eventos, gerenciando projetos de atrações nacionais e internacionais. Em paralelo ela fundou a DHP Promotion quando viu a necessidade de ativar e conceituar marcas de forma diferenciada nos eventos, passando a realizar projetos corporativos.
                             </p>
                         </div>
-                    </div>
+                    </Reveal>
 
                     {/* IMAGEM (direita) */}
-                    <div className="flex justify-center lg:justify-end">
+                    <Reveal delay={80} className="flex justify-center lg:justify-end">
                         <div className="relative w-[280px] sm:w-[320px]">
                             <img
                                 src="/DAIANA.jpeg"
@@ -33,13 +35,13 @@ const FourthSection = () => {
                                 className="w-full shadow-[0_0_5px_rgba(0,0,0,0.4)] object-cover rounded-2xl"
                             />
                         </div>
-                    </div>
+                    </Reveal>
                 </div>
 
                 {/* BLOCO 2 */}
                 <div className="mt-14 grid items-center gap-10 lg:grid-cols-2">
                     {/* IMAGEM (esquerda) */}
-                    <div className="order-2 flex justify-center lg:order-1 lg:justify-start">
+                    <Reveal delay={80} className="order-2 flex justify-center lg:order-1 lg:justify-start">
                         <div className="relative w-[280px] sm:w-[320px]">
                             <img
                                 src="/CINTIA.jpeg"
@@ -47,10 +49,10 @@ const FourthSection = () => {
                                 className="shadow-[0_0_5px_rgba(0,0,0,0.4)] w-full object-cover rounded-2xl"
                             />
                         </div>
-                    </div>
+                    </Reveal>
 
                     {/* TEXTO (direita) */}
-                    <div className="order-1 lg:order-2 text-center lg:text-left mx-auto lg:mx-0 max-w-xl">
+                    <Reveal className="order-1 lg:order-2 text-center lg:text-left mx-auto lg:mx-0 max-w-xl">
                         <p className="text-[#7A2E33]/80 text-sm sm:text-base">
                             Âncora Nacional
                         </p>
@@ -75,7 +77,7 @@ const FourthSection = () => {
                                 comportamento.
                             </p>
                         </div>
-                    </div>
+                    </Reveal>
                 </div>
             </div>
         </section>

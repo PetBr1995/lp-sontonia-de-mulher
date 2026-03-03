@@ -1,4 +1,5 @@
 import Passaportes from "./Passaportes";
+import Reveal from "./Reveal";
 
 const SixteenthSection = () => {
     const cardInfo = [
@@ -13,12 +14,17 @@ const SixteenthSection = () => {
       <section className="bg-[#D2C9C3] pb-16">
         
         <div className="h-72 bg-[url(/imagem-fundo-terceira-dobra.png)] bg-cover bg-center bg-no-repeat flex items-center justify-center">
-          <h2 className="text-white text-3xl text-center px-4">
-            O Sintonia de mulher é para quem:
-          </h2>
+          <Reveal once>
+            <h2 className="text-white text-3xl text-center px-4">
+              O Sintonia de mulher é para quem:
+            </h2>
+          </Reveal>
         </div>
   
-        <div className="max-w-7xl mx-auto flex flex-wrap justify-center gap-2 px-4 -mt-14">
+        <Reveal
+          delay={80}
+          className="max-w-7xl mx-auto flex flex-wrap justify-center gap-2 px-4 -mt-14"
+        >
           {cardInfo.map((info, idx) => (
             <div
               key={idx}
@@ -55,7 +61,7 @@ const SixteenthSection = () => {
               </h2>
             </div>
           ))}
-        </div>
+        </Reveal>
         <Passaportes/>
       </section>
     );

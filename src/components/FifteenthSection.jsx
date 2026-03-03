@@ -1,4 +1,5 @@
 import { ArrowRight } from "lucide-react";
+import Reveal from "./Reveal";
 
 const FifteenthSection = () => {
   const cardInfo = [
@@ -18,15 +19,19 @@ const FifteenthSection = () => {
 
       {/* CONTEÚDO */}
       <div className="relative z-10 max-w-5xl mx-auto">
-        <h1 className="text-center text-3xl sm:text-4xl leading-tight">
-          Um ÚNICO DIA pode redefinir o seu PRÓXIMO ANO
-        </h1>
+        <Reveal once>
+          <h1 className="text-center text-3xl sm:text-4xl leading-tight">
+            Um ÚNICO DIA pode redefinir o seu PRÓXIMO ANO
+          </h1>
+        </Reveal>
 
-        <h3 className="text-center py-8 text-2xl sm:text-3xl">
-          Durante o evento você terá:
-        </h3>
+        <Reveal delay={80}>
+          <h3 className="text-center py-8 text-2xl sm:text-3xl">
+            Durante o evento você terá:
+          </h3>
+        </Reveal>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+        <Reveal delay={120} className="grid grid-cols-1 sm:grid-cols-2 gap-6">
           {cardInfo.map((info, idx) => (
             <div
               key={idx}
@@ -41,7 +46,7 @@ const FifteenthSection = () => {
               </h2>
             </div>
           ))}
-        </div>
+        </Reveal>
       </div>
     </section>
   );
