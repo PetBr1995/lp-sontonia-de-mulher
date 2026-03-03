@@ -49,7 +49,7 @@ const HeroSection = () => {
           <div className="bg-[#D85A66] w-fit px-[1px] py-[1px] rounded-[18px]">
             <div className="bg-gradient-to-r from-[#D85A66] via-[#9E2F3F] to-[#9E2F3F] px-8 sm:px-10 py-3 rounded-[18px]">
               <a
-                href="#"
+                href="#passaportes"
                 className="text-white font-light text-lg sm:text-xl lg:text-2xl transition hover:brightness-110"
               >
                 Quero garantir minha vaga

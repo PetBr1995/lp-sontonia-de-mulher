@@ -62,7 +62,7 @@ const ThirdSection = () => {
           <div className="w-fit rounded-[18px] bg-[#D85A66] p-[1px] shadow-[0_0_10px_rgba(0,0,0,0.25)]">
             <div className="rounded-[18px] bg-gradient-to-r from-[#D85A66] via-[#9E2F3F] to-[#9E2F3F] px-8 py-3 sm:px-10">
               <a
-                href="#"
+                href="#passaportes"
                 className="block text-center text-lg font-light text-white transition hover:brightness-110 sm:text-xl lg:text-2xl"
               >
                 Quero garantir minha vaga

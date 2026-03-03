@@ -23,7 +23,7 @@ const Passaportes = () => {
 
     return (
         <section className="after:absolute after:content-[''] after:bg-[#E6E1DA] after:border-b-1 after:border-t-1 after:border-black/20 after:border-black/20 after:h-120 after:top-1/2 after:-translate-y-1/2  after:left-0 after:right-0 after:z-10 my-20 px-4 relative z-20">
-            <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-10">
+            <div id="passaportes" className="max-w-6xl mx-auto grid md:grid-cols-2 gap-10 scroll-mt-6">
                 {cardInfo.map((card, idx) => (
                     <div
                         key={idx}

@@ -11,12 +11,13 @@ const Home = () => {
     <>
       <section>
         <HeroSection />
-        <SecondSection/>
-        <ThirdSection/>
-        <FourthSection/>
-        <FifteenthSection/>
-        <SixteenthSection/>
-        <FormSection/>
+        <SecondSection />
+        <ThirdSection />
+        <FourthSection />
+        <FifteenthSection />
+        <SixteenthSection />
+        <FormSection />
+
       </section>
     </>
   );
