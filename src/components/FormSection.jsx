@@ -149,12 +149,9 @@ const FormSection = () => {
       }
 
       setStatus("success");
-      setMessage(data.message || "Inscrição enviada! Redirecionando...");
+      setMessage(data.message || "Cadastro enviado com sucesso!");
 
       setForm({ name: "", whatsapp: "", email: "", category: "", message: "" });
-
-      // ✅ redirect sem Router
-      window.location.href = "/agradecimento";
     } catch (err) {
       setStatus("error");
       setMessage("Falha de rede. Verifique sua conexão e tente novamente.");

@@ -35,11 +35,12 @@ const HeroSection = () => {
             <p>28 de maio de 2026</p>
           </div>
 
-          <div className="flex max-w-full items-center justify-center">
+          <div className="flex max-w-full flex-col items-center justify-center text-base sm:text-lg">
+            <span className="font-normal uppercase">Local do evento:</span>
             <img
               src="/LOGO-NOVA-ERA-HALL-fundo-escuro.png"
               alt="Logo Nova Era Hall"
-              className="h-auto w-36 sm:w-52 lg:w-60 object-contain"
+              className="h-auto w-28 sm:w-40 lg:w-52 object-contain drop-shadow-[0_3px_8px_rgba(0,0,0,0.65)]"
             />
           </div>
         </Reveal>
