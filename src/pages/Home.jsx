@@ -14,13 +14,17 @@ const Home = () => {
         <SecondSection />
         <ThirdSection />
         <FourthSection />
+        {/*
         <FifteenthSection />
+        */}
         <SixteenthSection />
         <FormSection />
         <footer className="bg-[#9E2F3F] px-4 py-6">
-          <p className="text-center text-sm text-white sm:text-base">
-            Todos os direitos reservados
-          </p>
+          <img
+            src="/RODAPE-LOGOS.png"
+            alt="Logos do rodape"
+            className="mx-auto h-auto w-full max-w-sm sm:max-w-md lg:max-w-xl object-contain"
+          />
         </footer>
       </section>
     </>

@@ -11,7 +11,7 @@ const SixteenthSection = () => {
     ];
   
     return (
-      <section className="bg-[#D2C9C3] pb-16">
+      <section className="bg-[#f5ede7] pb-16">
         
         <div className="h-72 bg-[url(/imagem-fundo-terceira-dobra.png)] bg-cover bg-center bg-no-repeat flex items-center justify-center">
           <Reveal once>

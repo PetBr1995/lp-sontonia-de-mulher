@@ -162,7 +162,7 @@ const FormSection = () => {
   };
 
   return (
-    <section className="relative bg-[#E6E1DA] py-20 px-4">
+    <section className="relative bg-[#f4f3ea] py-20 px-4">
       <div className="mx-auto max-w-5xl">
         <Reveal once className="text-center">
           <h2 className="text-3xl sm:text-4xl text-[#7A2E33] font-light">

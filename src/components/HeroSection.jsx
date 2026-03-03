@@ -1,4 +1,4 @@
-import { Calendar, MapPin } from "lucide-react";
+import { Calendar } from "lucide-react";
 import Reveal from "./Reveal";
 
 const HeroSection = () => {
@@ -9,16 +9,11 @@ const HeroSection = () => {
       <div className="relative max-w-7xl mx-auto flex flex-col  justify-center items-center px-5 sm:px-6">
         {/* TÍTULO */}
         <Reveal once className="text-white text-center">
-          <h1 className="text-6xl sm:text-7xl lg:text-8xl leading-[1.05]">
-            Sintonia
-            <br />
-            <span className="flex justify-center items-start items-end gap-3 text-amber-200">
-              <span className="text-3xl sm:text-4xl lg:text-5xl text-white">
-                de
-              </span>
-              Mulher
-            </span>
-          </h1>
+          <img
+            src="/SINTONIA-DE-MULHER-LOGO.png"
+            alt="Sintonia de Mulher"
+            className="mx-auto h-auto w-64 sm:w-80 lg:w-[26rem] object-contain"
+          />
         </Reveal>
 
         {/* SUBTÍTULO */}
@@ -30,19 +25,22 @@ const HeroSection = () => {
           </p>
         </Reveal>
 
-        {/* DATA E LOCAL */}
+        {/* DATA E LOGO */}
         <Reveal
           delay={120}
-          className="mt-8 sm:mt-10 flex flex-col gap-4 uppercase text-white"
+          className="mt-8 sm:mt-10 flex flex-row flex-wrap items-center justify-center gap-3 sm:gap-6 text-white"
         >
-          <div className="flex gap-2 items-center justify-center text-lg sm:text-xl lg:text-2xl">
+          <div className="flex max-w-full gap-2 items-center justify-center text-base sm:text-xl lg:text-2xl text-center">
             <Calendar className="w-6 h-6 lg:w-7 lg:h-7" />
             <p>28 de maio de 2026</p>
           </div>
 
-          <div className="flex gap-2 items-center justify-center text-lg sm:text-xl lg:text-2xl">
-            <MapPin className="w-6 h-6 lg:w-7 lg:h-7" />
-            <p>Centro de Convenções Vasco Vasques / Manaus</p>
+          <div className="flex max-w-full items-center justify-center">
+            <img
+              src="/LOGO-NOVA-ERA-HALL-fundo-escuro.png"
+              alt="Logo Nova Era Hall"
+              className="h-auto w-36 sm:w-52 lg:w-60 object-contain"
+            />
           </div>
         </Reveal>
 

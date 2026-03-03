@@ -23,12 +23,12 @@ const Passaportes = () => {
     ];
 
     return (
-        <section className="after:absolute after:content-[''] after:bg-[#E6E1DA] after:border-b-1 after:border-t-1 after:border-black/20 after:border-black/20 after:h-120 after:top-1/2 after:-translate-y-1/2  after:left-0 after:right-0 after:z-10 my-20 px-4 relative z-20">
+        <section className="after:absolute after:content-[''] after:bg-[url(/BG-6-INGRESSOS.png)] after:border-b-1 after:border-t-1 after:border-black/20 after:border-black/20 after:h-120 after:top-1/2 after:-translate-y-1/2  after:left-0 after:right-0 after:z-10 my-20 px-4 relative z-20">
             <div id="passaportes" className="relative z-20 max-w-6xl mx-auto grid items-stretch md:grid-cols-2 gap-10 scroll-mt-6">
                 {cardInfo.map((card, idx) => (
                     <Reveal key={idx} delay={idx * 120} className="relative z-20">
                     <div
-                        className="h-full bg-[#E6E1DA] border-1 border-black/20 relative z-20 rounded-3xl shadow-[0_15px_35px_rgba(0,0,0,0.15)] p-10 flex flex-col justify-between"
+                        className="h-full bg-[#f4f3ea] border-1 border-black/20 relative z-20 rounded-3xl shadow-[0_15px_35px_rgba(0,0,0,0.15)] p-10 flex flex-col justify-between"
                     >
                         {/* TÍTULO */}
                         <h2 className="text-center text-4xl tracking-wide text-[#7A2E33]">
@@ -59,7 +59,7 @@ const Passaportes = () => {
 
                             <div className="mt-2 flex items-end justify-center gap-2">
                                 <span className="text-xl text-[#7A2E33]">R$</span>
-                                <span className="text-6xl font-bold text-[#7A2E33]">
+                                <span className="text-7xl sm:text-8xl font-bold text-[#7A2E33] leading-none">
                                     {card.price.split(",")[0]}
                                 </span>
                                 <span className="text-2xl text-[#7A2E33]">

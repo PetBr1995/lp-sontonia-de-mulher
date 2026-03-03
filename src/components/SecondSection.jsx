@@ -17,14 +17,14 @@ const SecondSection = () => {
     <section
       className="
         relative 
-        bg-[#D2C9C3] 
+        bg-[#f5ede7] 
         px-4 py-10 sm:px-6 lg:px-8
 
         after:content-['']
         after:absolute
         after:w-13
         after:h-13
-        after:bg-[#D2C9C3]
+        after:bg-[#f5ede7]
         after:-bottom-4
         after:left-1/2
         after:-translate-x-1/2
@@ -38,7 +38,7 @@ const SecondSection = () => {
       </span>
 
       {/* CARD PRINCIPAL */}
-      <Reveal className="mx-auto grid max-w-7xl overflow-hidden rounded-2xl bg-[#D0CEC5] shadow-[0_0_2px_rgba(0,0,0,0.4)] md:grid-cols-2">
+      <Reveal className="mx-auto grid max-w-7xl overflow-hidden rounded-2xl bg-[#f4f3ea] shadow-[0_0_2px_rgba(0,0,0,0.4)] md:grid-cols-2">
         {/* IMAGEM */}
         <div className="flex items-center justify-center p-4 sm:p-6">
           <div className="w-full">
