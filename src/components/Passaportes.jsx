@@ -1,4 +1,4 @@
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, CalendarDays } from "lucide-react";
 import Reveal from "./Reveal";
 
 const Passaportes = () => {
@@ -23,7 +23,28 @@ const Passaportes = () => {
     ];
 
     return (
-        <section className="after:absolute after:content-[''] after:bg-[url(/BG-6-INGRESSOS.png)] after:border-b-1 after:border-t-1 after:border-black/20 after:border-black/20 after:h-120 after:top-1/2 after:-translate-y-1/2  after:left-0 after:right-0 after:z-10 my-20 px-4 relative z-20">
+        <section className="after:absolute after:mt-23 after:content-[''] after:bg-[url(/BG-6-INGRESSOS.png)] after:border-b-1 after:border-t-1 after:border-black/20 after:border-black/20 after:h-120 after:top-1/2 after:-translate-y-1/2  after:left-0 after:right-0 after:z-10 my-20 px-4 relative z-20">
+            <Reveal once className="relative z-20 mx-auto mb-10 max-w-6xl text-center text-[#7A2E33]">
+                <h2 className="text-3xl sm:text-4xl tracking-wide">
+                    Informações <span className="font-semibold">DO EVENTO</span>
+                </h2>
+
+                <div className="mt-4 flex flex-wrap items-center justify-center gap-x-6 gap-y-2 text-sm sm:text-lg uppercase">
+                    <div className="flex items-center gap-2">
+                        <CalendarDays className="h-4 w-4 sm:h-5 sm:w-5" />
+                        <p>28 de maio de 2026</p>
+                    </div>
+
+                    <div className="flex items-center justify-center">
+                        <img
+                            src="/LOGO-NOVA-ERA-HALL-fundo-escuro.png"
+                            alt="Logo Nova Era Hall"
+                            className="h-auto w-28 sm:w-36 object-contain"
+                        />
+                    </div>
+                </div>
+            </Reveal>
+
             <div id="passaportes" className="relative z-20 max-w-6xl mx-auto grid items-stretch md:grid-cols-2 gap-10 scroll-mt-6">
                 {cardInfo.map((card, idx) => (
                     <Reveal key={idx} delay={idx * 120} className="relative z-20">
