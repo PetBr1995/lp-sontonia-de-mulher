@@ -3,7 +3,7 @@ import Reveal from "./Reveal";
 
 const HeroSection = () => {
   return (
-    <section className="relative py-10 sm:py-30 md:py-40 lg:py:50 bg-[url(/HeroBanner.png)] bg-cover bg-no-repeat bg-center">
+    <section className="relative py-10 sm:py-30 md:py-40 lg:py:50 bg-[url(/imagem-fundo-terceira-dobra.png)] bg-cover bg-no-repeat bg-center">
       <div className="absolute inset-0 bg-black/30" />
 
       <div className="relative max-w-7xl mx-auto flex flex-col  justify-center items-center px-5 sm:px-6">
@@ -31,7 +31,7 @@ const HeroSection = () => {
           className="mt-8 sm:mt-10 flex flex-row flex-wrap items-center justify-center gap-3 sm:gap-6 text-white"
         >
           <div className="flex max-w-full gap-2 items-center justify-center text-base sm:text-xl lg:text-2xl text-center">
-            <Calendar className="w-6 h-6 lg:w-7 lg:h-7" />
+            <Calendar className="w-6 h-6 lg:w-7 lg:h-7 text-yellow-300" />
             <p>28 de maio de 2026</p>
           </div>
 

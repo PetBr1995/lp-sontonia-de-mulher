@@ -31,7 +31,7 @@ const Passaportes = () => {
 
                 <div className="mt-4 flex flex-wrap items-center justify-center gap-x-6 gap-y-2 text-sm sm:text-lg uppercase">
                     <div className="flex items-center gap-2">
-                        <CalendarDays className="h-4 w-4 sm:h-5 sm:w-5" />
+                        <CalendarDays className="h-4 w-4 sm:h-5 sm:w-5 text-yellow-300" />
                         <p>28 de maio de 2026</p>
                     </div>
 
