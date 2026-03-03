@@ -1,4 +1,4 @@
-import { Calendar } from "lucide-react";
+import { Calendar, MapPin } from "lucide-react";
 import Reveal from "./Reveal";
 
 const HeroSection = () => {
@@ -35,8 +35,8 @@ const HeroSection = () => {
             <p>28 de maio de 2026</p>
           </div>
 
-          <div className="flex max-w-full flex-col items-center justify-center text-base sm:text-lg">
-            <span className="font-normal uppercase">Local do evento:</span>
+          <div className="flex max-w-full items-center justify-center gap-2">
+            <MapPin className="h-5 w-5 sm:h-6 sm:w-6 text-yellow-300" />
             <img
               src="/LOGO-NOVA-ERA-HALL-fundo-escuro.png"
               alt="Logo Nova Era Hall"

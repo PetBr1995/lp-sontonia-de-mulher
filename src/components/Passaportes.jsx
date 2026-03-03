@@ -35,13 +35,9 @@ const Passaportes = () => {
                         <p>28 de maio de 2026</p>
                     </div>
 
-                    <div className="flex flex-col items-center justify-center">
+                    <div className="flex items-center justify-center gap-2">
                         <span className="font-normal uppercase">Local do evento:</span>
-                        <img
-                            src="/LOGO-NOVA-ERA-HALL-fundo-escuro.png"
-                            alt="Logo Nova Era Hall"
-                            className="h-auto w-28 sm:w-36 object-contain drop-shadow-[0_3px_8px_rgba(0,0,0,0.7)]"
-                        />
+                        <p>Nova Era Hall / Manaus</p>
                     </div>
                 </div>
             </Reveal>
