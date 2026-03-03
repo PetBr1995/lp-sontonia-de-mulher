@@ -1,5 +1,7 @@
 @import "tailwindcss";
 
+
+
 @font-face {
   font-family: "Articulat CF";
   src: url("./assets/fonts/ArticulatCF-Regular.otf") format("opentype");
@@ -42,6 +44,7 @@
 
 :root {
   font-family: "Articulat CF", sans-serif;
+  scroll-behavior: smooth;
 }
 
 body {
