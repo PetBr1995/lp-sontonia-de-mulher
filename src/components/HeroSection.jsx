@@ -33,18 +33,16 @@ const HeroSection = () => {
         {/* DATA E LOCAL */}
         <Reveal
           delay={120}
-          className="mt-8 sm:mt-10 flex flex-col sm:flex-row gap-4 sm:gap-6 uppercase text-white"
+          className="mt-8 sm:mt-10 flex flex-col gap-4 uppercase text-white"
         >
           <div className="flex gap-2 items-center justify-center text-lg sm:text-xl lg:text-2xl">
             <Calendar className="w-6 h-6 lg:w-7 lg:h-7" />
             <p>28 de maio de 2026</p>
           </div>
 
-          <div className="hidden sm:block w-px bg-white/40" />
-
           <div className="flex gap-2 items-center justify-center text-lg sm:text-xl lg:text-2xl">
             <MapPin className="w-6 h-6 lg:w-7 lg:h-7" />
-            <p>Em Manaus</p>
+            <p>Centro de Convenções Vasco Vasques / Manaus</p>
           </div>
         </Reveal>
 
