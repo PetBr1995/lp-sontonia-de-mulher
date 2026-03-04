@@ -20,7 +20,9 @@ const Home = () => {
         */}
         <SixteenthSection />
         <FAQSection />
-        <FormSection />
+        <div id="form">
+          <FormSection />
+        </div>
         <footer className="bg-[#9E2F3F] px-4 py-6">
           <img
             src="/RODAPE-LOGOS.png"
