@@ -41,11 +41,11 @@ const SecondSection = () => {
       <Reveal className="mx-auto grid max-w-7xl overflow-hidden rounded-2xl bg-[#f4f3ea] shadow-[0_0_2px_rgba(0,0,0,0.4)] md:grid-cols-2">
         {/* IMAGEM */}
         <div className="flex items-center justify-center p-4 sm:p-6">
-          <div className="w-full">
+          <div className="w-full max-w-[320px] sm:max-w-[380px] md:max-w-[420px] lg:max-w-[480px]">
             <img
-              src="/img-segunda-dobra.png"
+              src="/img.png"
               alt="image"
-              className="h-64 w-full object-contain sm:h-80 md:h-[420px] lg:h-[480px]"
+              className="aspect-square w-full rounded-full object-cover"
             />
           </div>
         </div>
