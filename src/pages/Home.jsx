@@ -1,4 +1,5 @@
 import FifteenthSection from "../components/FifteenthSection";
+import FAQSection from "../components/FAQSection";
 import FormSection from "../components/FormSection";
 import FourthSection from "../components/FourthSection";
 import HeroSection from "../components/HeroSection";
@@ -18,6 +19,7 @@ const Home = () => {
         <FifteenthSection />
         */}
         <SixteenthSection />
+        <FAQSection />
         <FormSection />
         <footer className="bg-[#9E2F3F] px-4 py-6">
           <img
