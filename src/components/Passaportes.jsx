@@ -31,13 +31,13 @@ const Passaportes = () => {
 
                 <div className="mt-4 flex flex-wrap items-center justify-center gap-x-6 gap-y-2 text-sm sm:text-lg uppercase">
                     <div className="flex items-center gap-2">
-                        <CalendarDays className="h-4 w-4 sm:h-5 sm:w-5 text-yellow-300" />
-                        <p>28 de maio de 2026</p>
+                        <CalendarDays className="h-4 w-4 sm:h-5 sm:w-5 text-[#7A2E33]" />
+                        <p className="capitalize"><span className="font-bold">Data:</span> 28/05</p>
                     </div>
 
                     <div className="flex items-center justify-center gap-2">
-                        <span className="font-normal uppercase">Local do evento:</span>
-                        <p>Nova Era Hall / Manaus</p>
+                        <span className="font-bold capitalize">Local:</span>
+                        <p>Nova Era Hall - Studio 5 / Manaus</p>
                     </div>
                 </div>
             </Reveal>
