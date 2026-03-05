@@ -13,7 +13,7 @@ const Reveal = ({
   delay = 0,
   duration = 700,
   threshold = 0.2,
-  once = true,
+  once = false,
   className = "",
 }) => {
   const ref = useRef(null);
@@ -40,12 +40,9 @@ const Reveal = ({
           return;
         }
 
-        if (!once && entry.intersectionRatio === 0) setIsVisible(false);
+        if (!once) setIsVisible(false);
       },
-      {
-        threshold,
-        rootMargin: "0px 0px -8% 0px",
-      }
+      { threshold }
     );
 
     observer.observe(element);
@@ -60,7 +57,7 @@ const Reveal = ({
       ref={ref}
       style={{ transitionDuration: `${duration}ms`, transitionDelay: `${delay}ms` }}
       className={[
-        "transform-gpu will-change-transform transition-[transform,opacity] ease-out",
+        "will-change-transform transition-all ease-out",
         isVisible ? "translate-x-0 translate-y-0 opacity-100" : `${hiddenTransform} opacity-0`,
         className,
       ].join(" ")}

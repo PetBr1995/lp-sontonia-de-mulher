@@ -3,7 +3,7 @@ import Reveal from "./Reveal";
 
 const HeroSection = () => {
   return (
-    <section className="relative py-10 sm:py-30 md:py-40 lg:py:50 bg-[url(/imagem-fundo-terceira-dobra.png)] bg-cover bg-no-repeat bg-center">
+    <section className="relative bg-[url(/imagem-fundo-terceira-dobra.png)] bg-cover bg-center bg-no-repeat py-10 sm:py-30 md:py-40 lg:py-50">
       <div className="absolute inset-0 bg-black/30" />
 
       <div className="relative max-w-7xl mx-auto flex flex-col  justify-center items-center px-5 sm:px-6">

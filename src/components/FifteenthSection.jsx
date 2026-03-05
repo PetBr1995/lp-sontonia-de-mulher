@@ -13,7 +13,7 @@ const FifteenthSection = () => {
 
   return (
     <section className="relative bg-[url(/HeroBanner.png)] bg-cover bg-center py-12 px-4 text-white">
-      <div className="absolute z-100 bottom-0 left-0 right-0 h-1 will-change-scroll bg-gradient-to-r from-[#D85A66] via-[#9E2F3F]/50 to-[#9E2F3F]/10"></div>
+      <div className="absolute bottom-0 left-0 right-0 z-[100] h-1 will-change-scroll bg-gradient-to-r from-[#D85A66] via-[#9E2F3F]/50 to-[#9E2F3F]/10"></div>
       {/* OVERLAY ESCURO */}
       <div className="absolute inset-0 bg-black/60"></div>
 

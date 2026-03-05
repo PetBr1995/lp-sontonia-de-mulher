@@ -44,9 +44,9 @@ const SixteenthSection = () => {
                 
                 after:content-['']
                 after:absolute
-                after:-top-0
+                after:top-0
                 after:left-1/2
-                after:-translate-1/2
+                after:-translate-x-1/2
                 after:w-18
                 after:h-18
                 after:bg-[url(/badge-lp-sintonia-mulher.png)]
