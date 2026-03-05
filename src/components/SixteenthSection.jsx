@@ -44,7 +44,7 @@ const SixteenthSection = () => {
                 
                 after:content-['']
                 after:absolute
-                after:top-0
+                after:-top-8
                 after:left-1/2
                 after:-translate-x-1/2
                 after:w-18
