@@ -23,7 +23,7 @@ const Passaportes = () => {
     ];
 
     return (
-        <section className="after:absolute after:mt-23 after:content-[''] after:bg-[url(/BG-6-INGRESSOS2.png)] after:bg-cover after:bg-center after:bg-no-repeat after:border-b-1 after:border-t-1 after:border-black/20 after:border-black/20 after:h-120 after:top-1/2 after:-translate-y-1/2  after:left-0 after:right-0 after:z-10 my-20 px-4 relative z-20">
+        <section className="after:absolute after:mt-23 after:content-[''] after:bg-[#7A2E33] after:bg-cover after:bg-center after:bg-no-repeat after:border-b-1 after:border-t-1 after:border-black/20 after:border-black/20 after:h-120 after:top-1/2 after:-translate-y-1/2  after:left-0 after:right-0 after:z-10 my-20 px-4 relative z-20">
             <Reveal once className="relative z-20 mx-auto mb-10 max-w-6xl text-center text-[#7A2E33]">
                 <h2 className="text-3xl sm:text-4xl tracking-wide">
                     Informações <span className="font-semibold">DO EVENTO</span>
