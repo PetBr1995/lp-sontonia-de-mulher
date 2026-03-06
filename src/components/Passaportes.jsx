@@ -26,7 +26,7 @@ const Passaportes = () => {
         <section className="relative z-20 my-20 px-4">
             <div
                 className="pointer-events-none absolute left-0 right-0 top-1/2 z-10 h-[30rem] -translate-y-1/2 border-y border-black/20 bg-cover bg-center bg-no-repeat"
-                style={{ backgroundImage: "url('/BG-6-INGRESSOS2.png')" }}
+                style={{ backgroundImage: "url('/BG-6-INGRESSOS.png?v=20260306')" }}
                 aria-hidden="true"
             />
 
