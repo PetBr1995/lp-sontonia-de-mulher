@@ -32,7 +32,7 @@ const Passaportes = () => {
                 <div className="mt-4 flex flex-wrap items-center justify-center gap-x-6 gap-y-2 text-sm sm:text-lg uppercase">
                     <div className="flex items-center gap-2">
                         <CalendarDays className="h-4 w-4 sm:h-5 sm:w-5 text-[#7A2E33]" />
-                        <p className="capitalize"><span className="font-bold">Data:</span> 28/06</p>
+                        <p className="capitalize"><span className="font-bold">Data:</span> 28/05</p>
                     </div>
 
                     <div className="flex items-center justify-center gap-2">
