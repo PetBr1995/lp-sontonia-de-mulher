@@ -102,7 +102,7 @@ const Passaportes = () => {
                                                 href="#form"
                                                 className="block text-center text-base font-light text-white transition hover:brightness-110 sm:text-lg lg:text-xl"
                                             >
-                                                teste Quero garantir minha vaga
+                                                Quero garantir minha vaga
                                             </a>
                                         </div>
                                     </div>
