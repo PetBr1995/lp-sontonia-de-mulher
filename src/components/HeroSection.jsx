@@ -25,7 +25,7 @@ const HeroSection = () => {
           </p>
         </Reveal>
 
-        {/* DATA E LOGO */}
+        {/* DATA E LOCAL */}
         <Reveal
           delay={120}
           className="mt-8 sm:mt-10 flex flex-row flex-wrap items-center justify-center gap-3 sm:gap-6 text-white"
@@ -35,13 +35,11 @@ const HeroSection = () => {
             <p>28 de maio de 2026</p>
           </div>
 
-          <div className="flex max-w-full items-center justify-center gap-2">
+          <div className="flex max-w-full items-center justify-center gap-2 text-base sm:text-xl lg:text-2xl text-center">
             <MapPin className="h-5 w-5 sm:h-6 sm:w-6 text-yellow-300" />
-            <img
-              src="/LOGO-NOVA-ERA-HALL-fundo-escuro.png"
-              alt="Logo Nova Era Hall"
-              className="h-auto w-28 sm:w-40 lg:w-52 object-contain drop-shadow-[0_3px_8px_rgba(0,0,0,0.65)]"
-            />
+            <p>
+              <span className="font-semibold">Local:</span> Nova Era Hall - Studio 5 / Manaus
+            </p>
           </div>
         </Reveal>
 
