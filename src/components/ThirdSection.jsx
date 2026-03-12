@@ -3,26 +3,26 @@ import Reveal from "./Reveal";
 const ThirdSection = () => {
   const cardInfo = [
     {
-      titulo: "Autonomia",
-      desc: "Clareza financeira e poder de decisão.",
-    },
-    {
       titulo: "Profissional",
       desc: "Direção, posicionamento e crescimento estruturado.",
     },
     {
-      titulo: "Pessoal",
-      desc: "Identidade, prioridades e decisões conscientes.",
-    },
-    {
-      titulo: "Financeiro",
-      desc: "Visão de negócio, execução inteligente e geração de valor.",
+      titulo: "Emocional",
+      desc: "Equilíbrio interno, inteligência emocional e clareza para tomar decisões.",
     },
     {
       titulo: "Saúde",
       desc: "Energia, disciplina e consistência para manter o ritmo.",
     },
-    
+    {
+      titulo: "Potência financeiro",
+      desc: "Visão de negócio, execução inteligente e geração de valor.",
+    },
+    {
+      titulo: "Autonomia",
+      desc: "Clareza financeira e poder de decisão.",
+    },
+
   ];
 
   return (
