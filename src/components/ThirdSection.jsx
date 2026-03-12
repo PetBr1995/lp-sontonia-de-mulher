@@ -15,7 +15,7 @@ const ThirdSection = () => {
       desc: "Energia, disciplina e consistência para manter o ritmo.",
     },
     {
-      titulo: "Potência financeiro",
+      titulo: "Potência financeira",
       desc: "Visão de negócio, execução inteligente e geração de valor.",
     },
     {
