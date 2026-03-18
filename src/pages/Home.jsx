@@ -24,11 +24,17 @@ const Home = () => {
           <FormSection />
         </div>
         <footer className="bg-[#9E2F3F] px-4 py-6">
-          <img
-            src="/RODAPE-LOGOS.png"
-            alt="Logos do rodape"
-            className="mx-auto h-auto w-full max-w-sm sm:max-w-md lg:max-w-xl object-contain"
-          />
+          <h2 className="mx-auto w-fit text-center font-mansory text-[1rem] uppercase tracking-[0.7em] text-white/80">
+            Realização
+          </h2>
+          <div className="flex items-end justify-center gap-4">
+            <img
+              src="/logo-digitalhub.svg"
+              alt="Logos do rodape"
+              className="w-40"
+            />
+            <img src="/logo_dhp_mp_transparent.png" className="w-40" alt="logo" />
+          </div>
         </footer>
       </section>
     </>
