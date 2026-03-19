@@ -47,7 +47,7 @@ const Passaportes = () => {
 
           <div className="flex items-center justify-center gap-2">
             <span className="font-bold capitalize">Local:</span>
-            <p>Nova Era Hall - Studio 5 / Manaus</p>
+            <p>NOVA ERA HALL - PLENÁRIA - STUDIO 5 / MANAUS</p>
           </div>
         </div>
       </Reveal>
