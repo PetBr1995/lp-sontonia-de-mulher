@@ -1,6 +1,5 @@
 import FifteenthSection from "../components/FifteenthSection";
 import FAQSection from "../components/FAQSection";
-import FormSection from "../components/FormSection";
 import FourthSection from "../components/FourthSection";
 import HeroSection from "../components/HeroSection";
 import SecondSection from "../components/SecondSection";
@@ -20,9 +19,6 @@ const Home = () => {
         */}
         <SixteenthSection />
         <FAQSection />
-        <div id="form">
-          <FormSection />
-        </div>
         <footer className="bg-[#9E2F3F] px-4 py-6">
           <h2 className="mx-auto w-fit text-center font-mansory text-[1rem] uppercase tracking-[0.7em] text-white/80">
             Realização
