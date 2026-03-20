@@ -205,7 +205,7 @@ const PassaporteCheckoutModal = ({ isOpen, onClose, checkoutUrl, categoryLabel }
               Garanta sua vaga
             </h3>
             <p className="mt-1 text-sm text-[#7A2E33]/90 sm:text-base">
-              Preencha seus dados para finalizar sua compra.
+              Preencha seus dados para comprar seu ingresso.
             </p>
           </div>
 

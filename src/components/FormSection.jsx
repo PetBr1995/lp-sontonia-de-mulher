@@ -168,7 +168,7 @@ const FormSection = () => {
           </h2>
 
           <p className="mt-3 text-lg sm:text-xl text-[#7A2E33]/90">
-            Preencha seus dados para finalizar sua inscrição
+            Preencha seus dados para comprar seu ingresso.
           </p>
 
           <div className="mx-auto mt-6 h-[2px] w-20 bg-[#7A2E33]" />
