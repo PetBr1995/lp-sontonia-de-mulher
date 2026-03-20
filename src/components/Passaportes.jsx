@@ -85,10 +85,10 @@ const Passaportes = () => {
 
                 <div className="mt-2 flex items-end justify-center gap-2">
                   <span className="text-xl text-[#7A2E33]">R$</span>
-                  <span className="text-7xl font-bold leading-none text-[#7A2E33] opacity-40 blur-[12px] select-none sm:text-8xl">
+                  <span className="text-7xl font-bold leading-none text-[#7A2E33] select-none sm:text-8xl">
                     {card.price.split(",")[0]}
                   </span>
-                  <span className="text-2xl text-[#7A2E33] opacity-40 blur-[12px] select-none">
+                  <span className="text-2xl text-[#7A2E33] select-none">
                     ,{card.price.split(",")[1]}
                   </span>
                 </div>
