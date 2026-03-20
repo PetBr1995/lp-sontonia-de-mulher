@@ -30,7 +30,7 @@ const FourthSection = () => {
                     <Reveal delay={80} className="flex justify-center lg:justify-end">
                         <div className="relative w-[280px] sm:w-[320px]">
                             <img
-                                src="/DAIANA.jpeg"
+                                src="/foto-daiana-2.jpeg"
                                 alt="Daiana Pereira"
                                 className="w-full shadow-[0_0_5px_rgba(0,0,0,0.4)] object-cover rounded-2xl"
                             />
