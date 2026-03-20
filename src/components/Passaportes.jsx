@@ -101,7 +101,7 @@ const Passaportes = () => {
                   <div className="w-fit rounded-[22px] bg-white p-[1px] shadow-[0_0_5px_rgba(0,0,0,0.4)]">
                     <div className="rounded-[22px] bg-gradient-to-r from-[#D85A66] via-[#9E2F3F] to-[#9E2F3F] px-6 py-3 sm:px-8">
                       <a
-                        href="#form"
+                        href="https://www.sympla.com.br/evento/sintonia-de-mulher-2026/3352903"
                         className="block text-center text-base font-light text-white transition hover:brightness-110 sm:text-lg lg:text-xl"
                       >
                         Quero garantir minha vaga
