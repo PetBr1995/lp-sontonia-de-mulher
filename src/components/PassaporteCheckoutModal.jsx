@@ -15,6 +15,25 @@ function formatWhatsappE164(numero = "") {
   return `+55${n}`;
 }
 
+function buildCheckoutUrlWithUtm(baseCheckoutUrl = "", currentSearch = "") {
+  if (!baseCheckoutUrl) return "";
+
+  try {
+    const checkout = new URL(baseCheckoutUrl);
+    const incomingParams = new URLSearchParams(currentSearch);
+    const allowedParams = ["utm_source", "utm_medium", "utm_campaign", "utm_term", "utm_content"];
+
+    allowedParams.forEach((param) => {
+      const value = incomingParams.get(param);
+      if (value) checkout.searchParams.set(param, value);
+    });
+
+    return checkout.toString();
+  } catch (_err) {
+    return baseCheckoutUrl;
+  }
+}
+
 const PassaporteCheckoutModal = ({ isOpen, onClose, checkoutUrl, categoryLabel }) => {
   const [sourceData, setSourceData] = useState({
     page_url: "",
@@ -34,6 +53,10 @@ const PassaporteCheckoutModal = ({ isOpen, onClose, checkoutUrl, categoryLabel }
   const [status, setStatus] = useState("idle");
   const [message, setMessage] = useState("");
   const [submittedOnce, setSubmittedOnce] = useState(false);
+  const checkoutUrlWithUtm = useMemo(
+    () => buildCheckoutUrlWithUtm(checkoutUrl, window.location.search),
+    [checkoutUrl]
+  );
 
   useEffect(() => {
     const urlParams = new URLSearchParams(window.location.search);
@@ -177,7 +200,7 @@ const PassaporteCheckoutModal = ({ isOpen, onClose, checkoutUrl, categoryLabel }
       setMessage("Cadastro enviado! Redirecionando para finalizar sua compra...");
 
       setTimeout(() => {
-        window.location.href = checkoutUrl;
+        window.location.href = checkoutUrlWithUtm || checkoutUrl;
       }, 700);
     } catch (_err) {
       setStatus("error");
